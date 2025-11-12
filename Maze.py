@@ -5,10 +5,12 @@ import random
 # --- Configuration ---
 height = int(input("Height 100 - 500: ", ))
 length = int(input("Length 100 - 500: ", ))
-if (height < 100 or height > 500) or (length < 100 or length > 500):
+scale = int(input("Scale 10 - 30: ", ))
+if (height < 100 or height > 500) or (length < 100 or length > 500) or (scale < 10 or scale > 30):
     height = int(input("Height 100 - 500: ", ))
     length = int(input("Length 100 - 500: ", ))
-scale = 15
+    scale = int(input("Scale 10 - 30: ", ))
+
 strange = False
 solve = True
 
@@ -120,6 +122,3 @@ def main():
     wn.exitonclick()
 main()
 
-# --- Maze solver ---
-
-# --- Main ---
