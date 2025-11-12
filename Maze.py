@@ -3,8 +3,11 @@ import turtle
 import random
 
 # --- Configuration ---
-length = 300
-height = 300
+height = int(input("Height 100 - 500: ", ))
+length = int(input("Length 100 - 500: ", ))
+if (height < 100 or height > 500) or (length < 100 or length > 500):
+    height = int(input("Height 100 - 500: ", ))
+    length = int(input("Length 100 - 500: ", ))
 scale = 15
 strange = False
 solve = True
@@ -106,6 +109,9 @@ def solver():
 
 
 def main():
+
+
+
     tset()
     generate()
     StartStop()
