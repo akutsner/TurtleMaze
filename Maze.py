@@ -12,7 +12,12 @@ if (height < 100 or height > 500) or (length < 100 or length > 500) or (scale < 
     scale = int(input("Scale 10 - 30: ", ))
 
 strange = False
-solve = True
+
+solve  =  str(input("Solve? (y/n): ", )).lower()
+if solve == "y":
+    solve = True
+else:
+    solve = False
 
 # --- Global variables ---
 grid_list = []
