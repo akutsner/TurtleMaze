@@ -1,6 +1,7 @@
 
 import turtle
 import random
+import time
 
 # --- Configuration ---
 height = int(input("Height 100 - 500: ", ))
@@ -115,6 +116,7 @@ def solver():
         t.goto(((path % rows) - .5 * rows) * scale, ((path // rows) - .5 * heights) * scale)
 
 
+
 def main():
 
 
@@ -122,6 +124,7 @@ def main():
     tset()
     generate()
     StartStop()
+
     if solve:
         solver()
     wn.exitonclick()
